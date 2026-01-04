@@ -1,96 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donor Login | UmagineDX</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #1e3a8a, #2563eb);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  <!-- CSS file link -->
+  <link rel="stylesheet" href="login.css">
 
-.login-box {
-  background: white;
-  padding: 30px;
-  width: 350px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-  text-align: center;
-}
-
-.login-box h2 {
-  color: #1e3a8a;
-  margin-bottom: 20px;
-}
-
-.login-box input {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.login-box button {
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(135deg, #16a34a, #22c55e);
-  border: none;
-  color: white;
-  font-size: 16px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.login-box button:hover {
-  transform: scale(1.05);
-}
-
-.login-box p {
-  font-size: 14px;
-  color: #555;
-}
-</style>
-
-}
-</style>
- >
-  <title>Login</title>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body><div class="login-box">
-  <h2><i class="fa-solid fa-user-lock"></i> Donor Login</h2>
+<body>
 
-  <input type="text" placeholder="Your Name" required>
-  <input type="email" placeholder="Email ID" required>
+  <div class="login-container">
+    <div class="login-card">
+      <h2><i class="fa-solid fa-user-lock"></i> Donor Login</h2>
 
-  <button onclick="openForm()">Continue</button>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
 
-  <p>Your details are safe & used only for donation coordination.</p>
-</div>
+      <button onclick="openForm()">Continue to Donation Form</button>
 
-<script>
-function openForm() {
-  window.location.href = "YOUR_GOOGLE_FORM_LINK_HERE";
-}
-</script>
+      <p>Your details are secure and used only for coordination.</p>
+    </div>
+  </div>
 
-</script>
->
-
-<h2>Login</h2>
-<p>Please login to continue donation</p>
-
-<input type="text" placeholder="Username"><br><br>
-<input type="password" placeholder="Password"><br><br>
-
-<button onclick="location.href='donate.html'">
-  Login
-</button>
+  <script>
+    function openForm() {
+      window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSecYbyxk-mWgAh397qFMozY6S0CK3iLUoT9CKM3TA9zCdj5EQ/viewform?usp=publish-editor";
+    }
+  </script>
 
 </body>
 </html>
